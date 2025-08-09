@@ -14,15 +14,20 @@ function ask(question) {
   return new Promise(resolve => rl.question(question, answer => resolve(answer.trim())));
 }
 
+function expandHome(p) {
+  return p.startsWith('~') ? path.join(process.env.HOME, p.slice(1)) : p;
+}
+
 (async () => {
   try {
     console.log('🔧 Foundry Contract Compiler');
 
-    const contractDir = await ask('📁 Enter the Foundry project directory: ');
-    const contractFile = await ask('📄 Enter the contract file path (relative to project root): ');
+    const contractDirInput = await ask('📁 Enter the Foundry project directory: ');
+    const contractFileInput = await ask('📄 Enter the contract file path (relative to project root): ');
 
-    const projectRoot = path.resolve(contractDir);
-    const fullContractPath = path.join(projectRoot, contractFile);
+    const projectRoot = path.resolve(expandHome(contractDirInput));
+    const contractFileRelative = path.normalize(contractFileInput);
+    const fullContractPath = path.resolve(projectRoot, contractFileRelative);
     const normalizedContractPath = path.relative(projectRoot, fullContractPath);
 
     if (!fs.existsSync(fullContractPath)) {
@@ -31,7 +36,7 @@ function ask(question) {
       process.exit(1);
     }
 
-    console.log(`📄 Foundry project root: ${projectRoot}`);
+    console.log(`📁 Foundry project root: ${projectRoot}`);
     console.log(`📄 Normalized contract path: ${normalizedContractPath}`);
 
     execSync(`forge build --contracts ${normalizedContractPath}`, {
