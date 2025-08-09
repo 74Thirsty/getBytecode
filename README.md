@@ -45,6 +45,15 @@ You'll be prompted to:
 3. Specify the output path (e.g., `build/MyContract.json`)
 
 ---
+## 🧑‍💻 Usage
+### 🔁 Interactive Mode
+```
+node extractAbiBytecode.js
+```
+⚡ CLI Mode
+```
+node extractAbiBytecode.js --dir src --file MyContract.sol --out build/MyContract.json
+```
 
 ## 📂 Output Format
 
