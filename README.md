@@ -162,15 +162,6 @@ function ask(question) {
 
 ---
 
-## 🧑‍💻 How to Use
-
-1. Save the script as `extractAbiBytecode.js`
-2. Make it executable:
-   ```bash
-   chmod +x extractAbiBytecode.js
-   ```
-3. Run it:
-   ```bash
    node extractAbiBytecode.js
    ```
 
