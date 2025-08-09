@@ -36,7 +36,7 @@ chmod +x extractAbiBytecode.js
 Run the script interactively:
 
 ```bash
-node extractAbiBytecode.js
+node getBytecode.js
 ```
 
 You'll be prompted to:
@@ -48,11 +48,11 @@ You'll be prompted to:
 ## 🧑‍💻 Usage
 ### 🔁 Interactive Mode
 ```
-node extractAbiBytecode.js
+node getBytecode.js
 ```
 ⚡ CLI Mode
 ```
-node extractAbiBytecode.js --dir src --file MyContract.sol --out build/MyContract.json
+node getBytecode.js --dir src --file MyContract.sol --out build/MyContract.json
 ```
 
 ## 📂 Output Format
