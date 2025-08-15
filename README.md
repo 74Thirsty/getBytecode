@@ -1,11 +1,18 @@
-# 🧪 Foundry ABI & Bytecode Extractor
 
-[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Ethereum](https://img.shields.io/badge/network-Ethereum-%236C71C4)](https://ethereum.org/)
-[![Security](https://img.shields.io/badge/encryption-AES--256-orange.svg)]()
+
+> <p><strong>Christopher Hirschauer</strong><br>
+> Builder @ the bleeding edge of MEV, automation, and high-speed arbitrage.<br>
+<em>June 13, 2025</em></p>
+<div class="badge-row">
+<a href="https://www.jetbrains.com/pycharm/"><img src="https://img.shields.io/badge/Built%20with-PyCharm-782F40?logo=pycharm&logoColor=CEB888"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.11-003057?logo=python&labelColor=B3A369"></a>
+<a href="https://docs.soliditylang.org/"><img src="https://img.shields.io/badge/Solidity-0.8.20-7BAFD4?logo=ethereum&labelColor=4B9CD3"></a>
+<a href="https://www.flashbots.net"><img src="https://img.shields.io/badge/Flashbots-MEV%20Bundle-2774AE?logo=thunderbird&labelColor=FFD100"></a>
+<a href="https://christopherhirschauer.bio"><img src="https://img.shields.io/badge/C.Hirschauer-Lead%20Developer-041E42?logo=parrotsecurity&labelColor=8D817B"></a>
 [![Issues](https://img.shields.io/github/issues/74Thirsty/getBytecode.svg)](https://github.com/74Thirsty/getBytecode/issues)
+[![Security](https://img.shields.io/badge/encryption-AES--256-orange.svg)]()
 
+# 🧪 Foundry ABI & Bytecode Extractor
 
 A lightweight Node.js script that compiles Solidity contracts using [Foundry](https://book.getfoundry.sh/) and extracts the **ABI** and **bytecode** into a clean JSON file. Perfect for deploying, testing, or integrating with frontends.
 
